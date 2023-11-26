@@ -17,7 +17,7 @@ public class App
     	Student stu1 = new Student(01, "Kunal", 60);
     	Student stu2 = new Student(02, "Raj Vikramadiya", 70);
     	
-    	Configuration con = new Configuration().configure("/Hibernate/src/main/java/hibernate.cfg.xml").addAnnotatedClass(Student.class);
+    	Configuration con = new Configuration().configure().addAnnotatedClass(Student.class);
     	
     	SessionFactory sf = con.buildSessionFactory();
     	
